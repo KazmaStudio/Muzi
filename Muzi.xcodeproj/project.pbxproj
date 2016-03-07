@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */; };
+		06CA3E2E1C8D2AB60040B08E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2D1C8D2AB60040B08E /* ViewController.swift */; };
+		06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E2F1C8D2AB60040B08E /* Main.storyboard */; };
+		06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E321C8D2AB60040B08E /* Assets.xcassets */; };
+		06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */; };
+		06CA3E411C8D2AB70040B08E /* MuziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E401C8D2AB70040B08E /* MuziTests.swift */; };
+		06CA3E4C1C8D2AB70040B08E /* MuziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06CA3E3D1C8D2AB70040B08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CA3E201C8D2AB60040B08E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06CA3E271C8D2AB60040B08E;
+			remoteInfo = Muzi;
+		};
+		06CA3E481C8D2AB70040B08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CA3E201C8D2AB60040B08E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06CA3E271C8D2AB60040B08E;
+			remoteInfo = Muzi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CA3E281C8D2AB60040B08E /* Muzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06CA3E2D1C8D2AB60040B08E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06CA3E301C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06CA3E321C8D2AB60040B08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06CA3E351C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06CA3E371C8D2AB60040B08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CA3E3C1C8D2AB70040B08E /* MuziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CA3E401C8D2AB70040B08E /* MuziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziTests.swift; sourceTree = "<group>"; };
+		06CA3E421C8D2AB70040B08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CA3E471C8D2AB70040B08E /* MuziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziUITests.swift; sourceTree = "<group>"; };
+		06CA3E4D1C8D2AB70040B08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06CA3E251C8D2AB60040B08E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CA3E391C8D2AB70040B08E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CA3E441C8D2AB70040B08E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06CA3E1F1C8D2AB60040B08E = {
+			isa = PBXGroup;
+			children = (
+				06CA3E2A1C8D2AB60040B08E /* Muzi */,
+				06CA3E3F1C8D2AB70040B08E /* MuziTests */,
+				06CA3E4A1C8D2AB70040B08E /* MuziUITests */,
+				06CA3E291C8D2AB60040B08E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06CA3E291C8D2AB60040B08E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CA3E281C8D2AB60040B08E /* Muzi.app */,
+				06CA3E3C1C8D2AB70040B08E /* MuziTests.xctest */,
+				06CA3E471C8D2AB70040B08E /* MuziUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CA3E2A1C8D2AB60040B08E /* Muzi */ = {
+			isa = PBXGroup;
+			children = (
+				06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */,
+				06CA3E2D1C8D2AB60040B08E /* ViewController.swift */,
+				06CA3E2F1C8D2AB60040B08E /* Main.storyboard */,
+				06CA3E321C8D2AB60040B08E /* Assets.xcassets */,
+				06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */,
+				06CA3E371C8D2AB60040B08E /* Info.plist */,
+			);
+			path = Muzi;
+			sourceTree = "<group>";
+		};
+		06CA3E3F1C8D2AB70040B08E /* MuziTests */ = {
+			isa = PBXGroup;
+			children = (
+				06CA3E401C8D2AB70040B08E /* MuziTests.swift */,
+				06CA3E421C8D2AB70040B08E /* Info.plist */,
+			);
+			path = MuziTests;
+			sourceTree = "<group>";
+		};
+		06CA3E4A1C8D2AB70040B08E /* MuziUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */,
+				06CA3E4D1C8D2AB70040B08E /* Info.plist */,
+			);
+			path = MuziUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06CA3E271C8D2AB60040B08E /* Muzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CA3E501C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "Muzi" */;
+			buildPhases = (
+				06CA3E241C8D2AB60040B08E /* Sources */,
+				06CA3E251C8D2AB60040B08E /* Frameworks */,
+				06CA3E261C8D2AB60040B08E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Muzi;
+			productName = Muzi;
+			productReference = 06CA3E281C8D2AB60040B08E /* Muzi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06CA3E3B1C8D2AB70040B08E /* MuziTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CA3E531C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "MuziTests" */;
+			buildPhases = (
+				06CA3E381C8D2AB70040B08E /* Sources */,
+				06CA3E391C8D2AB70040B08E /* Frameworks */,
+				06CA3E3A1C8D2AB70040B08E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06CA3E3E1C8D2AB70040B08E /* PBXTargetDependency */,
+			);
+			name = MuziTests;
+			productName = MuziTests;
+			productReference = 06CA3E3C1C8D2AB70040B08E /* MuziTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06CA3E461C8D2AB70040B08E /* MuziUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CA3E561C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "MuziUITests" */;
+			buildPhases = (
+				06CA3E431C8D2AB70040B08E /* Sources */,
+				06CA3E441C8D2AB70040B08E /* Frameworks */,
+				06CA3E451C8D2AB70040B08E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06CA3E491C8D2AB70040B08E /* PBXTargetDependency */,
+			);
+			name = MuziUITests;
+			productName = MuziUITests;
+			productReference = 06CA3E471C8D2AB70040B08E /* MuziUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06CA3E201C8D2AB60040B08E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = kazmastudio;
+				TargetAttributes = {
+					06CA3E271C8D2AB60040B08E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					06CA3E3B1C8D2AB70040B08E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 06CA3E271C8D2AB60040B08E;
+					};
+					06CA3E461C8D2AB70040B08E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 06CA3E271C8D2AB60040B08E;
+					};
+				};
+			};
+			buildConfigurationList = 06CA3E231C8D2AB60040B08E /* Build configuration list for PBXProject "Muzi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06CA3E1F1C8D2AB60040B08E;
+			productRefGroup = 06CA3E291C8D2AB60040B08E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06CA3E271C8D2AB60040B08E /* Muzi */,
+				06CA3E3B1C8D2AB70040B08E /* MuziTests */,
+				06CA3E461C8D2AB70040B08E /* MuziUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06CA3E261C8D2AB60040B08E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */,
+				06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */,
+				06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CA3E3A1C8D2AB70040B08E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CA3E451C8D2AB70040B08E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06CA3E241C8D2AB60040B08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CA3E2E1C8D2AB60040B08E /* ViewController.swift in Sources */,
+				06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CA3E381C8D2AB70040B08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CA3E411C8D2AB70040B08E /* MuziTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CA3E431C8D2AB70040B08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CA3E4C1C8D2AB70040B08E /* MuziUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06CA3E3E1C8D2AB70040B08E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06CA3E271C8D2AB60040B08E /* Muzi */;
+			targetProxy = 06CA3E3D1C8D2AB70040B08E /* PBXContainerItemProxy */;
+		};
+		06CA3E491C8D2AB70040B08E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06CA3E271C8D2AB60040B08E /* Muzi */;
+			targetProxy = 06CA3E481C8D2AB70040B08E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06CA3E2F1C8D2AB60040B08E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CA3E301C8D2AB60040B08E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CA3E351C8D2AB60040B08E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06CA3E4E1C8D2AB70040B08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06CA3E4F1C8D2AB70040B08E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06CA3E511C8D2AB70040B08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Muzi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		06CA3E521C8D2AB70040B08E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Muzi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		06CA3E541C8D2AB70040B08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MuziTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.MuziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muzi.app/Muzi";
+			};
+			name = Debug;
+		};
+		06CA3E551C8D2AB70040B08E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MuziTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.MuziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muzi.app/Muzi";
+			};
+			name = Release;
+		};
+		06CA3E571C8D2AB70040B08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MuziUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.MuziUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Muzi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		06CA3E581C8D2AB70040B08E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MuziUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.MuziUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Muzi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06CA3E231C8D2AB60040B08E /* Build configuration list for PBXProject "Muzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CA3E4E1C8D2AB70040B08E /* Debug */,
+				06CA3E4F1C8D2AB70040B08E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CA3E501C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "Muzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CA3E511C8D2AB70040B08E /* Debug */,
+				06CA3E521C8D2AB70040B08E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06CA3E531C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "MuziTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CA3E541C8D2AB70040B08E /* Debug */,
+				06CA3E551C8D2AB70040B08E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06CA3E561C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "MuziUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CA3E571C8D2AB70040B08E /* Debug */,
+				06CA3E581C8D2AB70040B08E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06CA3E201C8D2AB60040B08E /* Project object */;
+}
