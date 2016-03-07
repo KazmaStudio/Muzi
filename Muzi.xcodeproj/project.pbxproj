@@ -26,6 +26,8 @@
 		865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */; };
 		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
 		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
+		865D065A1C8D644C009533F8 /* ViewControllerPassBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */; };
+		865D065B1C8D644C009533F8 /* ViewControllerPassBy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865D06591C8D644C009533F8 /* ViewControllerPassBy.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
 		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
 		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
+		865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPassBy.swift; sourceTree = "<group>"; };
+		865D06591C8D644C009533F8 /* ViewControllerPassBy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerPassBy.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,11 +222,21 @@
 		865D06501C8D59D1009533F8 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				865D06571C8D63C1009533F8 /* Pass by */,
 				865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */,
 				865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */,
 				865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */,
 			);
 			name = Find;
+			sourceTree = "<group>";
+		};
+		865D06571C8D63C1009533F8 /* Pass by */ = {
+			isa = PBXGroup;
+			children = (
+				865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */,
+				865D06591C8D644C009533F8 /* ViewControllerPassBy.xib */,
+			);
+			name = "Pass by";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +347,7 @@
 				06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */,
 				865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */,
 				06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */,
+				865D065B1C8D644C009533F8 /* ViewControllerPassBy.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +380,7 @@
 				06CA3E841C8D62370040B08E /* UIButton+Custom.swift in Sources */,
 				865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */,
 				06CA3E831C8D62370040B08E /* NSString+Expand.swift in Sources */,
+				865D065A1C8D644C009533F8 /* ViewControllerPassBy.swift in Sources */,
 				865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */,
 				06CA3E871C8D62370040B08E /* UIView+XIBEdit.swift in Sources */,
 				06CA3E821C8D62370040B08E /* GhostButton.swift in Sources */,

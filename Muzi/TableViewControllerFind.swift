@@ -36,6 +36,15 @@ class TableViewControllerFind: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 2
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.row == 0){
+            let vcPassBy = ViewControllerPassBy()
+            self.navigationController?.pushViewController(vcPassBy, animated: true)
+        }else if (indexPath.row == 1){
+            
+        }
+    }
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
