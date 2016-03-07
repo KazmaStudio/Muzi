@@ -12,7 +12,16 @@ class ViewControllerPassBy: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        RESTful.passBy(["ff": "22"], callback: { (intCheck : Int) -> Void in
+            if intCheck == 1 {
+                
+            }
+            else {
+                
+            } 
+        })
+        
         // Do any additional setup after loading the view.
     }
 
