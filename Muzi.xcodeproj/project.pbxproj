@@ -13,6 +13,9 @@
 		06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */; };
 		06CA3E411C8D2AB70040B08E /* MuziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E401C8D2AB70040B08E /* MuziTests.swift */; };
 		06CA3E4C1C8D2AB70040B08E /* MuziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */; };
+		865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */; };
+		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
+		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		06CA3E471C8D2AB70040B08E /* MuziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziUITests.swift; sourceTree = "<group>"; };
 		06CA3E4D1C8D2AB70040B08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
+		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
+		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 		06CA3E591C8D3E4D0040B08E /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				865D06501C8D59D1009533F8 /* Find */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -168,6 +175,16 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		865D06501C8D59D1009533F8 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */,
+				865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */,
+				865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */,
+			);
+			name = Find;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 			files = (
 				06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */,
 				06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */,
+				865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */,
 				06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */,
+				865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */,
 				06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +393,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -395,6 +416,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,7 +440,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -433,6 +456,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -443,10 +467,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
 				INFOPLIST_FILE = Muzi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
 			};
 			name = Debug;
 		};
@@ -454,10 +481,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Muzi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
 			};
 			name = Release;
 		};
