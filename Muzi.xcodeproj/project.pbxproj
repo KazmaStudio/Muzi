@@ -13,6 +13,16 @@
 		06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */; };
 		06CA3E411C8D2AB70040B08E /* MuziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E401C8D2AB70040B08E /* MuziTests.swift */; };
 		06CA3E4C1C8D2AB70040B08E /* MuziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */; };
+		06CA3E7F1C8D62370040B08E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E741C8D62370040B08E /* Common.swift */; };
+		06CA3E801C8D62370040B08E /* CALayer+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E761C8D62370040B08E /* CALayer+Addition.swift */; };
+		06CA3E811C8D62370040B08E /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E771C8D62370040B08E /* CFButton.swift */; };
+		06CA3E821C8D62370040B08E /* GhostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E781C8D62370040B08E /* GhostButton.swift */; };
+		06CA3E831C8D62370040B08E /* NSString+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E791C8D62370040B08E /* NSString+Expand.swift */; };
+		06CA3E841C8D62370040B08E /* UIButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E7A1C8D62370040B08E /* UIButton+Custom.swift */; };
+		06CA3E851C8D62370040B08E /* UICommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E7B1C8D62370040B08E /* UICommon.swift */; };
+		06CA3E861C8D62370040B08E /* UITableView+NodataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E7C1C8D62370040B08E /* UITableView+NodataView.swift */; };
+		06CA3E871C8D62370040B08E /* UIView+XIBEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E7D1C8D62370040B08E /* UIView+XIBEdit.swift */; };
+		06CA3E881C8D62370040B08E /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E7E1C8D62370040B08E /* ViewCell.swift */; };
 		865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */; };
 		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
 		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
@@ -48,6 +58,16 @@
 		06CA3E471C8D2AB70040B08E /* MuziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CA3E4B1C8D2AB70040B08E /* MuziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziUITests.swift; sourceTree = "<group>"; };
 		06CA3E4D1C8D2AB70040B08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CA3E741C8D62370040B08E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		06CA3E761C8D62370040B08E /* CALayer+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Addition.swift"; sourceTree = "<group>"; };
+		06CA3E771C8D62370040B08E /* CFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
+		06CA3E781C8D62370040B08E /* GhostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhostButton.swift; sourceTree = "<group>"; };
+		06CA3E791C8D62370040B08E /* NSString+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Expand.swift"; sourceTree = "<group>"; };
+		06CA3E7A1C8D62370040B08E /* UIButton+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Custom.swift"; sourceTree = "<group>"; };
+		06CA3E7B1C8D62370040B08E /* UICommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICommon.swift; sourceTree = "<group>"; };
+		06CA3E7C1C8D62370040B08E /* UITableView+NodataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+NodataView.swift"; sourceTree = "<group>"; };
+		06CA3E7D1C8D62370040B08E /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
+		06CA3E7E1C8D62370040B08E /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
 		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
 		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
@@ -159,6 +179,8 @@
 		06CA3E5C1C8D3EB30040B08E /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				06CA3E741C8D62370040B08E /* Common.swift */,
+				06CA3E751C8D62370040B08E /* Xib Helper */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -175,6 +197,22 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		06CA3E751C8D62370040B08E /* Xib Helper */ = {
+			isa = PBXGroup;
+			children = (
+				06CA3E761C8D62370040B08E /* CALayer+Addition.swift */,
+				06CA3E771C8D62370040B08E /* CFButton.swift */,
+				06CA3E781C8D62370040B08E /* GhostButton.swift */,
+				06CA3E791C8D62370040B08E /* NSString+Expand.swift */,
+				06CA3E7A1C8D62370040B08E /* UIButton+Custom.swift */,
+				06CA3E7B1C8D62370040B08E /* UICommon.swift */,
+				06CA3E7C1C8D62370040B08E /* UITableView+NodataView.swift */,
+				06CA3E7D1C8D62370040B08E /* UIView+XIBEdit.swift */,
+				06CA3E7E1C8D62370040B08E /* ViewCell.swift */,
+			);
+			path = "Xib Helper";
 			sourceTree = "<group>";
 		};
 		865D06501C8D59D1009533F8 /* Find */ = {
@@ -319,9 +357,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CA3E811C8D62370040B08E /* CFButton.swift in Sources */,
+				06CA3E881C8D62370040B08E /* ViewCell.swift in Sources */,
+				06CA3E861C8D62370040B08E /* UITableView+NodataView.swift in Sources */,
+				06CA3E7F1C8D62370040B08E /* Common.swift in Sources */,
+				06CA3E851C8D62370040B08E /* UICommon.swift in Sources */,
+				06CA3E841C8D62370040B08E /* UIButton+Custom.swift in Sources */,
 				865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */,
+				06CA3E831C8D62370040B08E /* NSString+Expand.swift in Sources */,
 				865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */,
+				06CA3E871C8D62370040B08E /* UIView+XIBEdit.swift in Sources */,
+				06CA3E821C8D62370040B08E /* GhostButton.swift in Sources */,
 				06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */,
+				06CA3E801C8D62370040B08E /* CALayer+Addition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
