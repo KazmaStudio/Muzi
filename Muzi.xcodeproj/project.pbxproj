@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */; };
-		06CA3E2E1C8D2AB60040B08E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2D1C8D2AB60040B08E /* ViewController.swift */; };
 		06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E2F1C8D2AB60040B08E /* Main.storyboard */; };
 		06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E321C8D2AB60040B08E /* Assets.xcassets */; };
 		06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		06CA3E281C8D2AB60040B08E /* Muzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06CA3E2D1C8D2AB60040B08E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06CA3E301C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06CA3E321C8D2AB60040B08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06CA3E351C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +95,12 @@
 		06CA3E2A1C8D2AB60040B08E /* Muzi */ = {
 			isa = PBXGroup;
 			children = (
-				06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */,
-				06CA3E2D1C8D2AB60040B08E /* ViewController.swift */,
-				06CA3E2F1C8D2AB60040B08E /* Main.storyboard */,
-				06CA3E321C8D2AB60040B08E /* Assets.xcassets */,
-				06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */,
-				06CA3E371C8D2AB60040B08E /* Info.plist */,
+				06CA3E5D1C8D3EF00040B08E /* Resource */,
+				06CA3E5E1C8D3F400040B08E /* Model */,
+				06CA3E591C8D3E4D0040B08E /* Src */,
+				06CA3E5C1C8D3EB30040B08E /* Util */,
+				06CA3E5B1C8D3EA50040B08E /* Lib */,
+				06CA3E5A1C8D3E950040B08E /* Others */,
 			);
 			path = Muzi;
 			sourceTree = "<group>";
@@ -123,6 +121,53 @@
 				06CA3E4D1C8D2AB70040B08E /* Info.plist */,
 			);
 			path = MuziUITests;
+			sourceTree = "<group>";
+		};
+		06CA3E591C8D3E4D0040B08E /* Src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		06CA3E5A1C8D3E950040B08E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */,
+				06CA3E2F1C8D2AB60040B08E /* Main.storyboard */,
+				06CA3E321C8D2AB60040B08E /* Assets.xcassets */,
+				06CA3E341C8D2AB60040B08E /* LaunchScreen.storyboard */,
+				06CA3E371C8D2AB60040B08E /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		06CA3E5B1C8D3EA50040B08E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		06CA3E5C1C8D3EB30040B08E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		06CA3E5D1C8D3EF00040B08E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		06CA3E5E1C8D3F400040B08E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CA3E2E1C8D2AB60040B08E /* ViewController.swift in Sources */,
 				06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +528,7 @@
 				06CA3E521C8D2AB70040B08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06CA3E531C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "MuziTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +537,7 @@
 				06CA3E551C8D2AB70040B08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06CA3E561C8D2AB70040B08E /* Build configuration list for PBXNativeTarget "MuziUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +546,7 @@
 				06CA3E581C8D2AB70040B08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
