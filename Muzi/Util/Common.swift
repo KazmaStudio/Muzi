@@ -15,6 +15,11 @@ let URL_WECHAT_ACCESSTOKEN = "https://api.weixin.qq.com/sns/oauth2/access_token"
 let URL_WECHAT_USERINFO = "https://api.weixin.qq.com/sns/userinfo"
 
 let URL_RESTFUL = "http://restmuzi.kazmastudio.com"
+let METHOD_PASSBY = "/passby"
+
+func createRESTfulURL (method: String) -> String{
+    return URL_RESTFUL + method;
+}
 
 let userDefaults = NSUserDefaults.standardUserDefaults()
 

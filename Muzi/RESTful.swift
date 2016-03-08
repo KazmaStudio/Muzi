@@ -9,20 +9,48 @@
 import UIKit
 import Alamofire
 
-public class RESTful: NSObject {
+class RESTful: NSObject {
     
-    public class func passBy(data:NSDictionary, callback:(Int) -> Void) -> Void {
+    class func passBy(data:NSDictionary, success:(AnyObject) -> Void) -> Void {
         
-        Alamofire.request(.GET, URL_RESTFUL + "/passby", parameters: data as? [String : AnyObject])
+        Alamofire.request(.GET, createRESTfulURL(METHOD_PASSBY), parameters: data as? [String : AnyObject])
             .responseJSON { response in
                 
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON))")
+                if (response.result.isSuccess){
+                    
+                    success(response.result.value!)
+                    print("RESTful - \(METHOD_PASSBY)：\n\(response.result.value!)")
+                    
+                }else{
+                    
+                    handleCommonError()
+                    
                 }
-                
-                callback(0)
         }
         
         
     }
+    
+    class func passBy(data:NSDictionary, success:(AnyObject) -> Void, error:(String) -> Void) -> Void {
+        
+        Alamofire.request(.GET, URL_RESTFUL + createRESTfulURL(METHOD_PASSBY), parameters: data as? [String : AnyObject])
+            .responseJSON { response in
+                
+                if (response.result.isSuccess){
+                    
+                    success(response.result.value!)
+                    print("RESTful - \(METHOD_PASSBY)：\n\(response.result.value!)")
+                    
+                }else{
+                    
+                    handleCommonError()
+                    
+                }
+        }
+    }
+    
+    private class func handleCommonError(){
+        print("RESTful，错误")
+    }
 }
+

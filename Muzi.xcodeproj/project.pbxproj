@@ -28,6 +28,8 @@
 		06CA3ED01C8E6A120040B08E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECA1C8E6A050040B08E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		06CA3ED11C8E6A150040B08E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */; };
 		06CA3ED21C8E6A150040B08E /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06CA3ED91C8ED17F0040B08E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */; };
+		06CA3EDA1C8ED17F0040B08E /* CoreBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */; };
 		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
 		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
@@ -60,6 +62,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				06CA3ED21C8E6A150040B08E /* Kingfisher.framework in Embed Frameworks */,
+				06CA3EDA1C8ED17F0040B08E /* CoreBluetooth.framework in Embed Frameworks */,
 				06CA3ED01C8E6A120040B08E /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -93,6 +96,7 @@
 		06CA3EA71C8D6DF80040B08E /* RESTful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTful.swift; sourceTree = "<group>"; };
 		06CA3ECA1C8E6A050040B08E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
 		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
 		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CA3ED11C8E6A150040B08E /* Kingfisher.framework in Frameworks */,
+				06CA3ED91C8ED17F0040B08E /* CoreBluetooth.framework in Frameworks */,
 				06CA3ECF1C8E6A120040B08E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +254,7 @@
 		06CA3EAB1C8D74B40040B08E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */,
 				06CA3EC91C8E6A050040B08E /* Alamofire */,
 				06CA3ECB1C8E6A050040B08E /* Kingfisher */,
 			);
@@ -360,6 +366,11 @@
 				TargetAttributes = {
 					06CA3E271C8D2AB60040B08E = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					06CA3E3B1C8D2AB70040B08E = {
 						CreatedOnToolsVersion = 7.2;
