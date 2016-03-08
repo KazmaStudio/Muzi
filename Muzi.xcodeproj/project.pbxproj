@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064FEDE81C8F221D00D689EF /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE41C8F220F00D689EF /* Kingfisher.framework */; };
+		064FEDE91C8F221D00D689EF /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE41C8F220F00D689EF /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; };
+		064FEDEB1C8F221D00D689EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */; };
 		06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */; };
 		06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E2F1C8D2AB60040B08E /* Main.storyboard */; };
 		06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E321C8D2AB60040B08E /* Assets.xcassets */; };
@@ -24,12 +29,6 @@
 		06CA3EA41C8D6C250040B08E /* UIView+XIBEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E981C8D6C250040B08E /* UIView+XIBEdit.swift */; };
 		06CA3EA51C8D6C250040B08E /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E991C8D6C250040B08E /* ViewCell.swift */; };
 		06CA3EA81C8D6DF80040B08E /* RESTful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3EA71C8D6DF80040B08E /* RESTful.swift */; };
-		06CA3ECF1C8E6A120040B08E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECA1C8E6A050040B08E /* Alamofire.framework */; };
-		06CA3ED01C8E6A120040B08E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECA1C8E6A050040B08E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		06CA3ED11C8E6A150040B08E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */; };
-		06CA3ED21C8E6A150040B08E /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		06CA3ED91C8ED17F0040B08E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */; };
-		06CA3EDA1C8ED17F0040B08E /* CoreBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */; };
 		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
 		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
@@ -61,9 +60,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				06CA3ED21C8E6A150040B08E /* Kingfisher.framework in Embed Frameworks */,
-				06CA3EDA1C8ED17F0040B08E /* CoreBluetooth.framework in Embed Frameworks */,
-				06CA3ED01C8E6A120040B08E /* Alamofire.framework in Embed Frameworks */,
+				064FEDE91C8F221D00D689EF /* Kingfisher.framework in Embed Frameworks */,
+				064FEDEB1C8F221D00D689EF /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		064FEDE41C8F220F00D689EF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		064FEDE51C8F220F00D689EF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		06CA3E281C8D2AB60040B08E /* Muzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CA3E301C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,9 +95,6 @@
 		06CA3E981C8D6C250040B08E /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
 		06CA3E991C8D6C250040B08E /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		06CA3EA71C8D6DF80040B08E /* RESTful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTful.swift; sourceTree = "<group>"; };
-		06CA3ECA1C8E6A050040B08E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
-		06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
 		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
 		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
@@ -109,9 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CA3ED11C8E6A150040B08E /* Kingfisher.framework in Frameworks */,
-				06CA3ED91C8ED17F0040B08E /* CoreBluetooth.framework in Frameworks */,
-				06CA3ECF1C8E6A120040B08E /* Alamofire.framework in Frameworks */,
+				064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */,
+				064FEDE81C8F221D00D689EF /* Kingfisher.framework in Frameworks */,
+				064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,27 +252,11 @@
 		06CA3EAB1C8D74B40040B08E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				06CA3ED31C8ED1540040B08E /* CoreBluetooth.framework */,
-				06CA3EC91C8E6A050040B08E /* Alamofire */,
-				06CA3ECB1C8E6A050040B08E /* Kingfisher */,
+				064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */,
+				064FEDE41C8F220F00D689EF /* Kingfisher.framework */,
+				064FEDE51C8F220F00D689EF /* Alamofire.framework */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		06CA3EC91C8E6A050040B08E /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				06CA3ECA1C8E6A050040B08E /* Alamofire.framework */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		06CA3ECB1C8E6A050040B08E /* Kingfisher */ = {
-			isa = PBXGroup;
-			children = (
-				06CA3ECC1C8E6A050040B08E /* Kingfisher.framework */,
-			);
-			path = Kingfisher;
 			sourceTree = "<group>";
 		};
 		865D06501C8D59D1009533F8 /* Find */ = {
@@ -366,6 +348,7 @@
 				TargetAttributes = {
 					06CA3E271C8D2AB60040B08E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = H6XW4S2SCW;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -522,8 +505,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -542,10 +525,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,8 +552,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -583,9 +566,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -596,18 +579,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sizeng yuan (7E74ZADSXB)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Muzi/Lib/Alamofire",
-					"$(PROJECT_DIR)/Muzi/Lib/Kingfisher",
+					"$(PROJECT_DIR)/Muzi/Lib",
 				);
 				INFOPLIST_FILE = Muzi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 			};
 			name = Debug;
 		};
@@ -615,17 +597,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Muzi/Lib/Alamofire",
-					"$(PROJECT_DIR)/Muzi/Lib/Kingfisher",
+					"$(PROJECT_DIR)/Muzi/Lib",
 				);
 				INFOPLIST_FILE = Muzi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 			};
 			name = Release;
 		};
