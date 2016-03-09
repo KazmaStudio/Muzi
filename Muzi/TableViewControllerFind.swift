@@ -39,8 +39,11 @@ class TableViewControllerFind: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.row == 0){
-            let vcPassBy = ViewControllerPassBy()
-            self.navigationController?.pushViewController(vcPassBy, animated: true)
+			
+			let storyboard = UIStoryboard(name: "StoryboardPassBy", bundle: nil)
+			let vc = storyboard.instantiateViewControllerWithIdentifier("ViewControllerPassBy") as! ViewControllerPassBy
+			
+			self.navigationController?.pushViewController(vc, animated: true)
         }else if (indexPath.row == 1){
             
         }

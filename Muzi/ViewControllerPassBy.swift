@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreBluetooth
-
+import CoreLocation
 class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate, UITableViewDataSource, UITableViewDelegate, CBPeripheralDelegate {
 	
     @IBOutlet weak var tableInfo: UITableView!
@@ -18,6 +18,8 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
     var uuid = NSUUID().UUIDString
     var arrayDevice = Array<AnyObject>()
     var peri:CBPeripheral!
+	
+	var arrayRSSILabel = Array<UILabel>()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +31,14 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
 		self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
 		
 		self.centralManager = CBCentralManager.init(delegate: self, queue: nil)
+		self.tableInfo.delegate = self
+		self.tableInfo.dataSource = self
 		
-		tableInfo.delegate = self
-        tableInfo.dataSource = self
+		
         
         // Do any additional setup after loading the view.
     }
-
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,13 +73,16 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
 //                if (self.tableInfo.numberOfRowsInSection(0) > i){
 //                    self.tableInfo.reloadRowsAtIndexPaths([NSIndexPath.init(forRow: i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
 //                }
-//                
-                
+//
+				let label = self.arrayRSSILabel[i]
+				label.text = RSSI.stringValue
+				
                 hasRecord = true
             }
         }
         
         if(!hasRecord){
+			
             self.arrayDevice.append(newInfo)
             tableInfo.reloadData()
             self.peri = peripheral
@@ -93,6 +99,11 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
         peripheral.delegate = self;
         peripheral.discoverServices(nil)
     }
+	
+	
+	func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
+		print("失去连接：\(peripheral.identifier)")
+	}
     
     func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
         let services = peripheral.services
@@ -117,6 +128,8 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
             
         }
     }
+	
+	
     
     func centralManager(central: CBCentralManager, willRestoreState dict: [String : AnyObject]) {
         print("rrrrrrr")
@@ -181,7 +194,10 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
         
         cell.textLabel?.text = self.arrayDevice[indexPath.row].objectForKey("UUID") as? String
         cell.detailTextLabel?.text = arrayDevice[indexPath.row].objectForKey("RSSI")as? String
-        
+		
+		if (self.arrayRSSILabel.count == indexPath.row){
+			self.arrayRSSILabel.append(cell.detailTextLabel!)
+		}
        // print(self.arrayDevice)
         return cell
     }
