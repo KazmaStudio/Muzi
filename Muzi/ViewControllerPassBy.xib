@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerPassBy" customModule="Muzi" customModuleProvider="target">
             <connections>
+                <outlet property="tableInfo" destination="3Ir-RX-cWn" id="ZZd-io-e9N"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

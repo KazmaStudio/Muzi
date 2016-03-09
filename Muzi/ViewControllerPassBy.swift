@@ -9,11 +9,14 @@
 import UIKit
 import CoreBluetooth
 
-class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate {
+class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate, UITableViewDataSource, UITableViewDelegate {
 	
+    @IBOutlet weak var tableInfo: UITableView!
 	var peripheralManager = CBPeripheralManager()
 	var centralManager = CBCentralManager()
 	var service = CBMutableService!()
+    var uuid = NSUUID().UUIDString
+    var arrayDevice = Array<AnyObject>()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +29,8 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
 		
 		self.centralManager = CBCentralManager.init(delegate: self, queue: nil)
 		
-		
+		tableInfo.delegate = self
+        tableInfo.dataSource = self
         
         // Do any additional setup after loading the view.
     }
@@ -37,35 +41,82 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
     }
 	
 	func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
-		print (RSSI)
+        //print (RSSI)
+        //textViewInfo.text = RSSI.stringValue
 		//print(peripheral.valueForKey(CBAdvertisementDataLocalNameKey))
 		//let s = peripheral.services?.last
-		print(advertisementData)
+        
+        //let newInfo = []
+        //newInfo.setValue(peripheral.identifier.UUIDString, forKey: "UUID")
+        //newInfo.setValue(RSSI.stringValue, forKey: "RSSI")
+        
+        let newInfo = NSMutableDictionary()
+        newInfo.setValue(peripheral.identifier.UUIDString, forKey: "UUID")
+        newInfo.setValue(RSSI.stringValue, forKey: "RSSI")
+        print(advertisementData)
+
+       // ["UUID": peripheral.identifier.UUIDString, "RSSI": RSSI.stringValue]
+        var hasRecord = false
+        
+        for (var i = 0; i < self.arrayDevice.count; i++){
+            
+            let deviceInfo = self.arrayDevice[i]
+            
+            //print(deviceInfo.objectForKey("UUID")?.stringValue)
+            if((deviceInfo.objectForKey("UUID") as! String) == peripheral.identifier.UUIDString){
+                deviceInfo.setObject(RSSI.stringValue, forKey: "RSSI")
+                
+                if (self.tableInfo.numberOfRowsInSection(0) > i){
+                    self.tableInfo.reloadRowsAtIndexPaths([NSIndexPath.init(forRow: i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
+                }
+                
+                
+                hasRecord = true
+            }
+        }
+        
+        if(!hasRecord){
+            self.arrayDevice.append(newInfo)
+            tableInfo.reloadData()
+            
+        }
+        
+        
+        
+       
 	}
 	
 	func centralManagerDidUpdateState(central: CBCentralManager) {
-		print (central)
+		//print (central)
 		let scanOptions = [CBCentralManagerScanOptionAllowDuplicatesKey:true]
 		var services = [CBUUID]()
 		services.append(CBUUID.init(string: "6D036878-2753-4A7C-8F16-34D7E5E8DF48"))
 		
-		
-		self.centralManager.scanForPeripheralsWithServices(services, options: scanOptions)
+		//self.centralMana
+		self.centralManager.scanForPeripheralsWithServices(nil, options: scanOptions)
 	}
 	
 	func peripheralManagerDidUpdateState(peripheral: CBPeripheralManager) {
 		print(peripheral.state == CBPeripheralManagerState.PoweredOn)
 		
 		let serviceUUID = CBUUID.init(string: "6D036878-2753-4A7C-8F16-34D7E5E8DF48")
+        
+//        CBMutableCharacteristic *transferCharacteristic = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:@"Characteristic name"]
+//            properties:CBCharacteristicPropertyRead
+//            value:[@"Test value" dataUsingEncoding:NSUTF8StringEncoding]
+//            permissions:CBAttributePermissionsReadable];
+        let transferCharacteristic = CBMutableCharacteristic.init(type: serviceUUID, properties: CBCharacteristicProperties.Read, value: "Test value".dataUsingEncoding(NSUTF8StringEncoding), permissions: CBAttributePermissions.Readable)
+        
 		self.service=CBMutableService(type: serviceUUID, primary: true)
+        self.service.characteristics = [transferCharacteristic as CBCharacteristic]
 		self.peripheralManager.addService(service)
 		
 		
 	}
 	
 	func peripheralManager(peripheral: CBPeripheralManager, didAddService service: CBService, error: NSError?) {
-		print(error)
-		print("开始发送")
+		//print(error)
+		//print("开始发送")
 		
 		var servicesKey = [CBUUID]()
 		servicesKey.append(CBUUID.init(string: "6D036878-2753-4A7C-8F16-34D7E5E8DF48"))
@@ -75,11 +126,30 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
 	}
 	
 	func peripheralManagerDidStartAdvertising(peripheral: CBPeripheralManager, error: NSError?) {
-		print(error)
-		print("发送advertising成功")
+		//print(error)
+        //print("发送advertising成功")
 	}
 	
-	
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.arrayDevice.count
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell.init(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
+        
+        
+        cell.textLabel?.text = self.arrayDevice[indexPath.row].objectForKey("UUID") as? String
+        cell.detailTextLabel?.text = arrayDevice[indexPath.row].objectForKey("RSSI")as? String
+        
+       // print(self.arrayDevice)
+        return cell
+    }
 
     /*
     // MARK: - Navigation
