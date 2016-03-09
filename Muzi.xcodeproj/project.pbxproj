@@ -12,6 +12,8 @@
 		064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; };
 		064FEDEB1C8F221D00D689EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */; };
+		064FEDF31C907BA400D689EF /* StoryboardPassBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064FEDF21C907BA400D689EF /* StoryboardPassBy.storyboard */; };
+		064FEDF51C90849000D689EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF41C90849000D689EF /* CoreLocation.framework */; };
 		06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */; };
 		06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E2F1C8D2AB60040B08E /* Main.storyboard */; };
 		06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E321C8D2AB60040B08E /* Assets.xcassets */; };
@@ -33,7 +35,6 @@
 		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
 		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
 		865D065A1C8D644C009533F8 /* ViewControllerPassBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */; };
-		865D065B1C8D644C009533F8 /* ViewControllerPassBy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865D06591C8D644C009533F8 /* ViewControllerPassBy.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		064FEDE41C8F220F00D689EF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		064FEDE51C8F220F00D689EF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		064FEDF21C907BA400D689EF /* StoryboardPassBy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardPassBy.storyboard; sourceTree = "<group>"; };
+		064FEDF41C90849000D689EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		06CA3E281C8D2AB60040B08E /* Muzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CA3E301C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,7 +102,6 @@
 		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
 		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
 		865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPassBy.swift; sourceTree = "<group>"; };
-		865D06591C8D644C009533F8 /* ViewControllerPassBy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerPassBy.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064FEDF51C90849000D689EF /* CoreLocation.framework in Frameworks */,
 				064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */,
 				064FEDE81C8F221D00D689EF /* Kingfisher.framework in Frameworks */,
 				064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */,
@@ -252,6 +255,7 @@
 		06CA3EAB1C8D74B40040B08E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				064FEDF41C90849000D689EF /* CoreLocation.framework */,
 				064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */,
 				064FEDE41C8F220F00D689EF /* Kingfisher.framework */,
 				064FEDE51C8F220F00D689EF /* Alamofire.framework */,
@@ -274,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */,
-				865D06591C8D644C009533F8 /* ViewControllerPassBy.xib */,
+				064FEDF21C907BA400D689EF /* StoryboardPassBy.storyboard */,
 			);
 			name = "Pass by";
 			sourceTree = "<group>";
@@ -393,8 +397,8 @@
 				06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */,
 				06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */,
 				865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */,
+				064FEDF31C907BA400D689EF /* StoryboardPassBy.storyboard in Resources */,
 				06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */,
-				865D065B1C8D644C009533F8 /* ViewControllerPassBy.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,7 +572,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -589,7 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 			};
 			name = Debug;
 		};
@@ -607,7 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Muzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "166e7547-c207-4739-9333-3e167da8b402";
+				PROVISIONING_PROFILE = "fbd85ecc-4707-4d91-9f44-878e92a391d5";
 			};
 			name = Release;
 		};
