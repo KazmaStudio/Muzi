@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate, UITableViewDataSource, UITableViewDelegate {
+class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate, UITableViewDataSource, UITableViewDelegate, CBPeripheralDelegate {
 	
     @IBOutlet weak var tableInfo: UITableView!
 	var peripheralManager = CBPeripheralManager()
@@ -17,10 +17,11 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
 	var service = CBMutableService!()
     var uuid = NSUUID().UUIDString
     var arrayDevice = Array<AnyObject>()
+    var peri:CBPeripheral!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //self.peri = CBPeripheral.initialize()
         RESTful.passBy(["ff": "22"], success: { (data : AnyObject) -> Void in
             
             })
@@ -53,7 +54,7 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
         let newInfo = NSMutableDictionary()
         newInfo.setValue(peripheral.identifier.UUIDString, forKey: "UUID")
         newInfo.setValue(RSSI.stringValue, forKey: "RSSI")
-        print(advertisementData)
+      //  print(advertisementData)
 
        // ["UUID": peripheral.identifier.UUIDString, "RSSI": RSSI.stringValue]
         var hasRecord = false
@@ -66,10 +67,10 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
             if((deviceInfo.objectForKey("UUID") as! String) == peripheral.identifier.UUIDString){
                 deviceInfo.setObject(RSSI.stringValue, forKey: "RSSI")
                 
-                if (self.tableInfo.numberOfRowsInSection(0) > i){
-                    self.tableInfo.reloadRowsAtIndexPaths([NSIndexPath.init(forRow: i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
-                }
-                
+//                if (self.tableInfo.numberOfRowsInSection(0) > i){
+//                    self.tableInfo.reloadRowsAtIndexPaths([NSIndexPath.init(forRow: i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
+//                }
+//                
                 
                 hasRecord = true
             }
@@ -78,13 +79,48 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
         if(!hasRecord){
             self.arrayDevice.append(newInfo)
             tableInfo.reloadData()
+            self.peri = peripheral
+            
+            central.connectPeripheral(peripheral, options: nil)
             
         }
         
         
         
-       
 	}
+    
+    func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
+        peripheral.delegate = self;
+        peripheral.discoverServices(nil)
+    }
+    
+    func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
+        let services = peripheral.services
+        for ser in services!{
+            peripheral.discoverCharacteristics(nil, forService: ser)
+        }
+    }
+    
+    func peripheral(peripheral: CBPeripheral, didDiscoverCharacteristicsForService service: CBService, error: NSError?) {
+        if let charactericsArr = service.characteristics
+        {
+            for charactericsx in charactericsArr
+            {
+               // peripheral.setNotifyValue(true, forCharacteristic: charactericsx)
+                
+                print("Characteristic: \(charactericsx.UUID)")
+                print("service: \(service.UUID)")
+                //textField.text = textField.text + "Characteristic: \(charactericsx)\n"
+                
+               // peripheral.readValueForCharacteristic(charactericsx)
+            }
+            
+        }
+    }
+    
+    func centralManager(central: CBCentralManager, willRestoreState dict: [String : AnyObject]) {
+        print("rrrrrrr")
+    }
 	
 	func centralManagerDidUpdateState(central: CBCentralManager) {
 		//print (central)
@@ -110,7 +146,6 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
 		self.service=CBMutableService(type: serviceUUID, primary: true)
         self.service.characteristics = [transferCharacteristic as CBCharacteristic]
 		self.peripheralManager.addService(service)
-		
 		
 	}
 	
