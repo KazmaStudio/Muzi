@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 import CoreLocation
-class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate, UITableViewDataSource, UITableViewDelegate, CBPeripheralDelegate {
+class ViewControllerPassBy: UIViewController {
 	
     @IBOutlet weak var tableInfo: UITableView!
 	var peripheralManager = CBPeripheralManager()
@@ -24,15 +24,17 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.peri = CBPeripheral.initialize()
-        RESTful.passBy(["ff": "22"], success: { (data : AnyObject) -> Void in
+
+        
+        RESTful.updateGPS(["username": "zhaochenjun","date":"2016-03-11 17:00:00","lat":121,"lon":170], success: { (data : AnyObject) -> Void in
             
             })
         
-		self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
+		//self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
 		
-		self.centralManager = CBCentralManager.init(delegate: self, queue: nil)
-		self.tableInfo.delegate = self
-		self.tableInfo.dataSource = self
+		//self.centralManager = CBCentralManager.init(delegate: self, queue: nil)
+		//self.tableInfo.delegate = self
+		//self.tableInfo.dataSource = self
 		
 		
         
@@ -43,7 +45,7 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
+	/*
 	func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
         //print (RSSI)
         //textViewInfo.text = RSSI.stringValue
@@ -90,8 +92,6 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
             central.connectPeripheral(peripheral, options: nil)
             
         }
-        
-        
         
 	}
     
@@ -201,7 +201,7 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
        // print(self.arrayDevice)
         return cell
     }
-
+*/
     /*
     // MARK: - Navigation
 
@@ -211,5 +211,4 @@ class ViewControllerPassBy: UIViewController, CBCentralManagerDelegate, CBPeriph
         // Pass the selected object to the new view controller.
     }
     */
-
 }

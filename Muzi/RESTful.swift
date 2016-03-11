@@ -23,7 +23,7 @@ class RESTful: NSObject {
                     
                 }else{
                     
-                    handleCommonError()
+                    handleCommonError(response.result.error!)
                     
                 }
         }
@@ -43,14 +43,53 @@ class RESTful: NSObject {
                     
                 }else{
                     
-                    handleCommonError()
+                    handleCommonError(response.result.error!)
                     
                 }
         }
     }
     
-    private class func handleCommonError(){
+    class func updateGPS(data:NSDictionary, success:(AnyObject) -> Void) -> Void {
+       
+        Alamofire.request(.GET, createRESTfulURL(METHOD_POST_USER_GPS), parameters: data as? [String : AnyObject])
+            .responseJSON { response in
+                
+                if (response.result.isSuccess){
+                    
+                    success(response.result.value!)
+                    print("RESTful - \(METHOD_POST_USER_GPS)：\n\(response.result.value!)")
+                    
+                }else{
+                    
+                    handleCommonError(response.result.error!)
+                    
+                }
+        }
+        
+        
+    }
+    
+    class func updateGPS(data:NSDictionary, success:(AnyObject) -> Void, error:(String) -> Void) -> Void {
+        
+        Alamofire.request(.GET, URL_RESTFUL + createRESTfulURL(METHOD_POST_USER_GPS), parameters: data as? [String : AnyObject])
+            .responseJSON { response in
+                
+                if (response.result.isSuccess){
+                    
+                    success(response.result.value!)
+                    print("RESTful - \(METHOD_POST_USER_GPS)：\n\(response.result.value!)")
+                    
+                }else{
+                    
+                    handleCommonError(response.result.error!)
+                    
+                }
+        }
+    }
+    
+    private class func handleCommonError(error: NSError){
         print("RESTful，错误")
+        print(error)
     }
 }
 
