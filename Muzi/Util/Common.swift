@@ -15,8 +15,9 @@ let URL_WECHAT_ACCESSTOKEN = "https://api.weixin.qq.com/sns/oauth2/access_token"
 let URL_WECHAT_USERINFO = "https://api.weixin.qq.com/sns/userinfo"
 
 let URL_RESTFUL = "http://restmuzi.kazmastudio.com"
-let METHOD_PASSBY = "/passby"
-let METHOD_POST_USER_GPS = "/postUserGPS"
+let RESTFUL_METHOD_PASSBY = "/passby"
+let RESTFUL_METHOD_POST_USER_GPS_RECORD = "/postUserGPSRecord"
+let RESTFUL_METHOD_GET_USER_GPS_RECORD = "/getUserGPSRecord"
 
 func createRESTfulURL (method: String) -> String{
     return URL_RESTFUL + method;

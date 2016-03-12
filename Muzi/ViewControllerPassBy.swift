@@ -26,9 +26,13 @@ class ViewControllerPassBy: UIViewController {
         //self.peri = CBPeripheral.initialize()
 
         
-        RESTful.updateGPS(["username": "zhaochenjun","date":"2016-03-11 17:00:00","lat":121,"lon":170], success: { (data : AnyObject) -> Void in
-            
+        RESTful.postUserGPSRecord(["username": "whoever","date":"2016-03-11 17:00:00","lat":121.231313124,"lon":170.12312313], success: { (data : AnyObject) -> Void in
+            // 请求成功回调
             })
+        
+        RESTful.getUserGPSRecord(["username": "whoever"], success: { (data : AnyObject) -> Void in
+            // 数据在data里
+        })
         
 		//self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
 		
