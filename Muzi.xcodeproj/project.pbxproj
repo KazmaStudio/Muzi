@@ -12,9 +12,13 @@
 		064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; };
 		064FEDEB1C8F221D00D689EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */; };
-		064FEDF31C907BA400D689EF /* StoryboardPassBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064FEDF21C907BA400D689EF /* StoryboardPassBy.storyboard */; };
 		064FEDF51C90849000D689EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF41C90849000D689EF /* CoreLocation.framework */; };
 		06B8A4BA1C940927009BA0C2 /* RESTful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8A4B91C940927009BA0C2 /* RESTful.swift */; };
+		06B8A4C11C940979009BA0C2 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8A4BC1C940979009BA0C2 /* NavigationControllerFind.swift */; };
+		06B8A4C21C940979009BA0C2 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B8A4BD1C940979009BA0C2 /* StoryboardFind.storyboard */; };
+		06B8A4C31C940979009BA0C2 /* StoryboardPassBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B8A4BE1C940979009BA0C2 /* StoryboardPassBy.storyboard */; };
+		06B8A4C41C940979009BA0C2 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8A4BF1C940979009BA0C2 /* TableViewControllerFind.swift */; };
+		06B8A4C51C940979009BA0C2 /* ViewControllerPassBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8A4C01C940979009BA0C2 /* ViewControllerPassBy.swift */; };
 		06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */; };
 		06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E2F1C8D2AB60040B08E /* Main.storyboard */; };
 		06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CA3E321C8D2AB60040B08E /* Assets.xcassets */; };
@@ -31,10 +35,6 @@
 		06CA3EA31C8D6C250040B08E /* UITableView+NodataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E971C8D6C250040B08E /* UITableView+NodataView.swift */; };
 		06CA3EA41C8D6C250040B08E /* UIView+XIBEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E981C8D6C250040B08E /* UIView+XIBEdit.swift */; };
 		06CA3EA51C8D6C250040B08E /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA3E991C8D6C250040B08E /* ViewCell.swift */; };
-		865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */; };
-		865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */; };
-		865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */; };
-		865D065A1C8D644C009533F8 /* ViewControllerPassBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +73,13 @@
 		064FEDE41C8F220F00D689EF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		064FEDE51C8F220F00D689EF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		064FEDF21C907BA400D689EF /* StoryboardPassBy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardPassBy.storyboard; sourceTree = "<group>"; };
 		064FEDF41C90849000D689EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		06B8A4B91C940927009BA0C2 /* RESTful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTful.swift; sourceTree = "<group>"; };
+		06B8A4BC1C940979009BA0C2 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
+		06B8A4BD1C940979009BA0C2 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
+		06B8A4BE1C940979009BA0C2 /* StoryboardPassBy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardPassBy.storyboard; sourceTree = "<group>"; };
+		06B8A4BF1C940979009BA0C2 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
+		06B8A4C01C940979009BA0C2 /* ViewControllerPassBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPassBy.swift; sourceTree = "<group>"; };
 		06CA3E281C8D2AB60040B08E /* Muzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CA3E2B1C8D2AB60040B08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CA3E301C8D2AB60040B08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,10 +102,6 @@
 		06CA3E971C8D6C250040B08E /* UITableView+NodataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+NodataView.swift"; sourceTree = "<group>"; };
 		06CA3E981C8D6C250040B08E /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
 		06CA3E991C8D6C250040B08E /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
-		865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
-		865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardFind.storyboard; sourceTree = "<group>"; };
-		865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
-		865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPassBy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +141,34 @@
 			path = RESTful;
 			sourceTree = "<group>";
 		};
+		06B8A4BB1C940979009BA0C2 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				06B8A4C61C94097C009BA0C2 /* Find */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		06B8A4C61C94097C009BA0C2 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				06B8A4C71C94098D009BA0C2 /* Passby */,
+				06B8A4BC1C940979009BA0C2 /* NavigationControllerFind.swift */,
+				06B8A4BD1C940979009BA0C2 /* StoryboardFind.storyboard */,
+				06B8A4BF1C940979009BA0C2 /* TableViewControllerFind.swift */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		06B8A4C71C94098D009BA0C2 /* Passby */ = {
+			isa = PBXGroup;
+			children = (
+				06B8A4BE1C940979009BA0C2 /* StoryboardPassBy.storyboard */,
+				06B8A4C01C940979009BA0C2 /* ViewControllerPassBy.swift */,
+			);
+			name = Passby;
+			sourceTree = "<group>";
+		};
 		06CA3E1F1C8D2AB60040B08E = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +195,7 @@
 				06B8A4B81C940927009BA0C2 /* RESTful */,
 				06CA3E5D1C8D3EF00040B08E /* Resource */,
 				06CA3E5E1C8D3F400040B08E /* Model */,
-				06CA3E591C8D3E4D0040B08E /* Src */,
+				06B8A4BB1C940979009BA0C2 /* Src */,
 				06CA3EAB1C8D74B40040B08E /* Lib */,
 				06CA3E8E1C8D6C250040B08E /* Util */,
 				06CA3E5A1C8D3E950040B08E /* Others */,
@@ -191,14 +219,6 @@
 				06CA3E4D1C8D2AB70040B08E /* Info.plist */,
 			);
 			path = MuziUITests;
-			sourceTree = "<group>";
-		};
-		06CA3E591C8D3E4D0040B08E /* Src */ = {
-			isa = PBXGroup;
-			children = (
-				865D06501C8D59D1009533F8 /* Find */,
-			);
-			name = Src;
 			sourceTree = "<group>";
 		};
 		06CA3E5A1C8D3E950040B08E /* Others */ = {
@@ -261,26 +281,6 @@
 				064FEDE51C8F220F00D689EF /* Alamofire.framework */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		865D06501C8D59D1009533F8 /* Find */ = {
-			isa = PBXGroup;
-			children = (
-				865D06571C8D63C1009533F8 /* Pass by */,
-				865D06511C8D5A11009533F8 /* NavigationControllerFind.swift */,
-				865D06531C8D5A56009533F8 /* StoryboardFind.storyboard */,
-				865D06551C8D5AA9009533F8 /* TableViewControllerFind.swift */,
-			);
-			name = Find;
-			sourceTree = "<group>";
-		};
-		865D06571C8D63C1009533F8 /* Pass by */ = {
-			isa = PBXGroup;
-			children = (
-				865D06581C8D644C009533F8 /* ViewControllerPassBy.swift */,
-				064FEDF21C907BA400D689EF /* StoryboardPassBy.storyboard */,
-			);
-			name = "Pass by";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,8 +396,8 @@
 			files = (
 				06CA3E361C8D2AB60040B08E /* LaunchScreen.storyboard in Resources */,
 				06CA3E331C8D2AB60040B08E /* Assets.xcassets in Resources */,
-				865D06541C8D5A56009533F8 /* StoryboardFind.storyboard in Resources */,
-				064FEDF31C907BA400D689EF /* StoryboardPassBy.storyboard in Resources */,
+				06B8A4C31C940979009BA0C2 /* StoryboardPassBy.storyboard in Resources */,
+				06B8A4C21C940979009BA0C2 /* StoryboardFind.storyboard in Resources */,
 				06CA3E311C8D2AB60040B08E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,18 +423,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865D06561C8D5AA9009533F8 /* TableViewControllerFind.swift in Sources */,
 				06CA3EA01C8D6C250040B08E /* NSString+Expand.swift in Sources */,
 				06CA3E9D1C8D6C250040B08E /* CALayer+Addition.swift in Sources */,
+				06B8A4C51C940979009BA0C2 /* ViewControllerPassBy.swift in Sources */,
 				06CA3EA21C8D6C250040B08E /* UICommon.swift in Sources */,
 				06CA3EA51C8D6C250040B08E /* ViewCell.swift in Sources */,
-				865D065A1C8D644C009533F8 /* ViewControllerPassBy.swift in Sources */,
-				865D06521C8D5A11009533F8 /* NavigationControllerFind.swift in Sources */,
 				06CA3E9C1C8D6C250040B08E /* Common.swift in Sources */,
 				06CA3EA11C8D6C250040B08E /* UIButton+Custom.swift in Sources */,
 				06B8A4BA1C940927009BA0C2 /* RESTful.swift in Sources */,
 				06CA3E9F1C8D6C250040B08E /* GhostButton.swift in Sources */,
+				06B8A4C41C940979009BA0C2 /* TableViewControllerFind.swift in Sources */,
 				06CA3EA41C8D6C250040B08E /* UIView+XIBEdit.swift in Sources */,
+				06B8A4C11C940979009BA0C2 /* NavigationControllerFind.swift in Sources */,
 				06CA3EA31C8D6C250040B08E /* UITableView+NodataView.swift in Sources */,
 				06CA3E9E1C8D6C250040B08E /* CFButton.swift in Sources */,
 				06CA3E2C1C8D2AB60040B08E /* AppDelegate.swift in Sources */,
