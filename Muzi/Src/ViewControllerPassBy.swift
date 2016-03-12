@@ -24,14 +24,16 @@ class ViewControllerPassBy: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.peri = CBPeripheral.initialize()
-
         
+        // 用于上传GPS数据
+        // 第一个参数放上传的数据，是个dictionary，有四个参数，username,data,lat,lon,lat和lon是经纬度
         RESTful.postUserGPSRecord(["username": "whoever","date":"2016-03-11 17:00:00","lat":121.231313124,"lon":170.12312313], success: { (data : AnyObject) -> Void in
-            // 请求成功回调
+            // 数据成功回调
             })
         
+        // 用于查询GPS数据，username填入用于查询谁的GPS数据，不填就是数据库内所有人的GPS数据
         RESTful.getUserGPSRecord(["username": "whoever"], success: { (data : AnyObject) -> Void in
-            // 数据在data里
+            // 数据库返回的数据在data里
         })
         
 		//self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
