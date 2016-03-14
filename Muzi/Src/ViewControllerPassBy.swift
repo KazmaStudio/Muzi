@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreLocation
-class ViewControllerPassBy: UIViewController ,CLLocationManagerDelegate,CLLocationManager{
+class ViewControllerPassBy: UIViewController ,CLLocationManagerDelegate{
 	
     @IBOutlet weak var tableInfo: UITableView!
 	//var peripheralManager = CBPeripheralManager()
@@ -19,7 +19,7 @@ class ViewControllerPassBy: UIViewController ,CLLocationManagerDelegate,CLLocati
     //var peri:CBPeripheral!
 	
 	var arrayRSSILabel = Array<UILabel>()
-    
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,14 +44,13 @@ class ViewControllerPassBy: UIViewController ,CLLocationManagerDelegate,CLLocati
         
         // Do any additional setup after loading the view.
         //locationManager.startUpdatingLocation()
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        let locationManager : CLLocationManager = CLLocationManager()
+        
+       // locationManager : CLLocationManager = CLLocationManager()
         locationManager.delegate = self
         //设备使用电池供电时最高的精度
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
+        
         //精确到1000米,距离过滤器，定义了设备移动后获得位置信息的最小距离
         locationManager.distanceFilter = kCLLocationAccuracyKilometer
         
@@ -60,10 +59,18 @@ class ViewControllerPassBy: UIViewController ,CLLocationManagerDelegate,CLLocati
         }
 
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+    }
 	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        print(1)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
