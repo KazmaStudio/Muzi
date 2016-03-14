@@ -7,20 +7,20 @@
 //
 
 import UIKit
-import CoreBluetooth
 import CoreLocation
-class ViewControllerPassBy: UIViewController {
+class ViewControllerPassBy: UIViewController ,CLLocationManagerDelegate,CLLocationManager{
 	
     @IBOutlet weak var tableInfo: UITableView!
-	var peripheralManager = CBPeripheralManager()
-	var centralManager = CBCentralManager()
-	var service = CBMutableService!()
+	//var peripheralManager = CBPeripheralManager()
+	//var centralManager = CBCentralManager()
+	//var service = CBMutableService!()
     var uuid = NSUUID().UUIDString
     var arrayDevice = Array<AnyObject>()
-    var peri:CBPeripheral!
+    //var peri:CBPeripheral!
 	
 	var arrayRSSILabel = Array<UILabel>()
-	
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.peri = CBPeripheral.initialize()
@@ -41,15 +41,41 @@ class ViewControllerPassBy: UIViewController {
 		//self.centralManager = CBCentralManager.init(delegate: self, queue: nil)
 		//self.tableInfo.delegate = self
 		//self.tableInfo.dataSource = self
-		
-		
         
         // Do any additional setup after loading the view.
+        //locationManager.startUpdatingLocation()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let locationManager : CLLocationManager = CLLocationManager()
+        locationManager.delegate = self
+        //设备使用电池供电时最高的精度
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        //精确到1000米,距离过滤器，定义了设备移动后获得位置信息的最小距离
+        locationManager.distanceFilter = kCLLocationAccuracyKilometer
+        
+        if(CLLocationManager.locationServicesEnabled()){
+            locationManager.startUpdatingLocation()
+        }
+
     }
 	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print(locations.first?.coordinate.latitude)
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        print(newLocation.coordinate.latitude)
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print(error)
     }
 	/*
 	func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {

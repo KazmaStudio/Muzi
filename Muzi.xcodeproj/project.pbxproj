@@ -11,7 +11,6 @@
 		064FEDE91C8F221D00D689EF /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE41C8F220F00D689EF /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; };
 		064FEDEB1C8F221D00D689EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDE51C8F220F00D689EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF01C8F234C00D689EF /* CoreBluetooth.framework */; };
 		064FEDF51C90849000D689EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064FEDF41C90849000D689EF /* CoreLocation.framework */; };
 		06B8A4BA1C940927009BA0C2 /* RESTful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8A4B91C940927009BA0C2 /* RESTful.swift */; };
 		06B8A4C11C940979009BA0C2 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8A4BC1C940979009BA0C2 /* NavigationControllerFind.swift */; };
@@ -110,7 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				064FEDF51C90849000D689EF /* CoreLocation.framework in Frameworks */,
-				064FEDF11C8F234C00D689EF /* CoreBluetooth.framework in Frameworks */,
 				064FEDE81C8F221D00D689EF /* Kingfisher.framework in Frameworks */,
 				064FEDEA1C8F221D00D689EF /* Alamofire.framework in Frameworks */,
 			);
